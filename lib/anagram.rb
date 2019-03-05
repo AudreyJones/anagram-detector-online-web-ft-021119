@@ -13,6 +13,9 @@ class Anagram
     # split_element = []
     array.collect do |element|
       split_element = element.split("").sort
+      if split_element = split_word
+        return element
+      end
     end
     # @word.match(%w(array))
     # (element.split("").sort)
