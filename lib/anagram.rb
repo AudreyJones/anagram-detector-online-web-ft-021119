@@ -9,18 +9,16 @@ class Anagram
     end
 # Does an array of letters (@word) match another array of letters(array)?
   def match(array)                    # ["hello", "world", "zombies", "pants", "dipper"]
-    # (@word.match(%w(array)))
     split_word = @word.split("").sort # ["a", "d", "e", "i", "p", "r"]
-    split_element = []
-    array.collect do |element|
-      split_element << element.split("").sort
-      if split_element == split_word
-        return element
-      end
-    end
+                                      # split_element = []
+                                      # array.collect do |element|
+                                      #   split_element << element.split("").sort
+                                      #   if split_element == split_word
+                                      #     return element
+                                      #   end
+                                      # end
 
-    # array.select {|i| %w(i).sort == split_word}
-    # binding.pry
+    array.select {|i| %w(i).sort == split_word}
   end
 
 end
