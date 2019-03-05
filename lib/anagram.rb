@@ -12,7 +12,7 @@ class Anagram
     split_word = @word.split("").sort # ["a", "d", "e", "i", "p", "r"]
     array.collect do |element|
       split_element = element.split("").sort
-      
+
     end
     # @word.match(%w(array))
     # (element.split("").sort)
