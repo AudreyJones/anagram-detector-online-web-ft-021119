@@ -18,7 +18,9 @@ class Anagram
         return element
       end
     end
+    binding.pry
   end
+  
 end
 # @word.match(%w(array))
 # (element.split("").sort)
