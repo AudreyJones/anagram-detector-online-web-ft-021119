@@ -10,8 +10,6 @@ class Anagram
 # Does an array of letters (@word) match another array of letters(array)?
   def match(array)                    # ["hello", "world", "zombies", "pants", "dipper"]
     split_word = @word.split("").sort # ["a", "d", "e", "i", "p", "r"]
-                                      # @word.match(%w(array))
-                                      # (element.split("").sort)
     array.collect do |element|
       element.split("").sort
     end
