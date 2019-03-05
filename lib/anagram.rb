@@ -19,7 +19,7 @@ class Anagram
     end
     # @word.match(%w(array))
     # (element.split("").sort)
-    binding.pry
+    # binding.pry
   end
 end
                                       # An example:
