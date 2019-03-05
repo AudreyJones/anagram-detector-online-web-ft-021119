@@ -11,14 +11,14 @@ class Anagram
   def match(array)                    # ["hello", "world", "zombies", "pants", "dipper"]
     binding.pry
     # (@word.match(%w(array)))
-    # split_word = @word.split("").sort # ["a", "d", "e", "i", "p", "r"]
-    # # split_element = []
-    # array.collect do |element|
-    #   split_element = element.split("").sort
-    #   if split_element = split_word
-    #     return element
-    #   end
-    # end
+    split_word = @word.split("").sort # ["a", "d", "e", "i", "p", "r"]
+    # split_element = []
+    array.collect do |element|
+      split_element = element.split("").sort
+      if split_element = split_word
+        return element
+      end
+    end
     # @word.match(%w(array))
     # (element.split("").sort)
     # binding.pry
