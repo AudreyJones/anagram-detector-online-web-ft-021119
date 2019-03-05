@@ -18,8 +18,9 @@ class Anagram
                                       #   end
                                       # end
 
-    array.select {|i| %w(i).sort == split_word}
-    binding.pry
+    array.select {|i| %w(i).sort == split_word
+    binding.pry}
+    
   end
 
 end
